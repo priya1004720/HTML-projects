@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            color: #444;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Online Quiz</h1>
+        <form action="#" method="post">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. What does HTML stand for?</h3>
+                <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+                <label><input type="radio" name="q1" value="b"> Hyperlink and Text Markup</label>
+                <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Which tag is used to create a hyperlink?</h3>
+                <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label>
+                <label><input type="radio" name="q2" value="b"> &lt;a&gt;</label>
+                <label><input type="radio" name="q2" value="c"> &lt;href&gt;</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Which CSS property is used to change text color?</h3>
+                <label><input type="radio" name="q3" value="a"> text-color</label>
+                <label><input type="radio" name="q3" value="b"> font-color</label>
+                <label><input type="radio" name="q3" value="c"> color</label>
+            </div>
+
+            <input type="submit" value="Submit Quiz">
+        </form>
+    </div>
+</body>
+</html>
